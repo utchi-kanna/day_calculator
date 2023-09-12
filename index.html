@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="btn.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+      integrity="YOUR-CORRECT-INTEGRITY-HASH"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+    ></script>
+    <title>Day Calculator</title>
+  </head>
+  <body>
+    <h1>Day Calculator</h1>
+    <form id="dayCalculatorForm">
+      <label for="dateInput">Enter a Date:</label>
+      <fw-datepicker
+        max-year="2025"
+        min-year="2010"
+        type="date"
+        id="dateInput"
+        required
+      ></fw-datepicker>
+
+      <br /><br />
+      <button type="button" id="calculateButton" class="btn-31">
+        <span class="text-container">
+          <span class="text">Calculate</span>
+        </span>
+      </button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
